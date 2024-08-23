@@ -1,0 +1,79 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+.box {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box.expanded {
+    padding: 40px;
+    background-color: #0056b3;
+}
+
+.box-header h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.box-content {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box-content label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box-content input[type="color"],
+.box-content select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.box.expanded .box-content {
+    display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-header h2 {
+        font-size: 1.4rem;
+    }
+}

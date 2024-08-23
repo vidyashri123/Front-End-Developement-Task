@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Expandable Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <!-- First Interactive Box -->
+        <section class="box" onclick="toggleBox(this)">
+            <header class="box-header">
+                <h2>Bundle & Save 1</h2>
+            </header>
+            <div class="box-content">
+                <label for="color1">Choose Color:</label>
+                <input type="color" id="color1" name="color1">
+
+                <label for="size1">Select Size:</label>
+                <select id="size1" name="size1">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Second Interactive Box -->
+        <section class="box" onclick="toggleBox(this)">
+            <header class="box-header">
+                <h2>Bundle & Save 2</h2>
+            </header>
+            <div class="box-content">
+                <label for="color2">Choose Color:</label>
+                <input type="color" id="color2" name="color2">
+
+                <label for="size2">Select Size:</label>
+                <select id="size2" name="size2">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Third Interactive Box -->
+        <section class="box" onclick="toggleBox(this)">
+            <header class="box-header">
+                <h2>Bundle & Save 3</h2>
+            </header>
+            <div class="box-content">
+                <label for="color3">Choose Color:</label>
+                <input type="color" id="color3" name="color3">
+
+                <label for="size3">Select Size:</label>
+                <select id="size3" name="size3">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
